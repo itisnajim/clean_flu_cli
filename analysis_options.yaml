@@ -1,0 +1,69 @@
+include: package:very_good_analysis/analysis_options.5.1.0.yaml
+
+analyzer:
+  # plugins:
+  #     - custom_lint
+  # custom_lint:
+  #   rules:
+  #     # Explicitly disable one lint rule
+  #     - custom_lint_get_lint_fail: false
+  #     #- missing_provider_scope: false
+
+  exclude:
+    [
+      "build/**",
+      ".dart_tool/**",
+      "**/*.g.dart",
+      "**/*.freezed.dart",
+      "lib/gen/**",
+      "**/*.mocks.dart",
+      "lib/generated_plugin_registrant.dart",
+      "bricks/*/__brick__/**",
+    ]
+  language:
+    strict-casts: true
+
+  errors:
+    unused_import: error
+    invalid_annotation_target: ignore
+
+linter:
+  # The lint rules applied to this project can be customized in the
+  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+  # included above or to enable additional rules. A list of all available lints
+  # and their documentation is published at
+  # https://dart-lang.github.io/linter/lints/index.html.
+  #
+  # Instead of disabling a lint rule for the entire project in the
+  # section below, it can also be suppressed for a single line of code
+  # or a specific dart file by using the `// ignore: name_of_lint` and
+  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+  # producing the lint.
+  rules:
+    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
+    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+    - public_member_api_docs: false
+    - annotate_overrides
+    - await_only_futures
+    - camel_case_types
+    - cancel_subscriptions
+    - close_sinks
+    - comment_references
+    - constant_identifier_names
+    - control_flow_in_finally
+    - empty_statements
+    - library_names
+    - avoid_catching_errors
+    - avoid_returning_null
+    - avoid_null_checks_in_equality_operators
+    - unnecessary_parenthesis
+    - unnecessary_this
+    - unnecessary_overrides
+    - unnecessary_lambdas
+    - unnecessary_brace_in_string_interps
+    - curly_braces_in_flow_control_structures
+    - slash_for_doc_comments
+    - non_constant_identifier_names
+    - prefer_const_constructors
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
