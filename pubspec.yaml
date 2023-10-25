@@ -1,6 +1,6 @@
 name: clean_flu_cli
-description: Build a clean and organized Flutter app structure.
-version: 0.1.0
+description: Build a clean and organized Flutter app structure using CleanFlu CLI.
+version: 0.1.0+1
 repository: https://github.com/itisnajim/clean_flu_cli
 issue_tracker: https://github.com/itisnajim/clean_flu_cli/issues
 topics: [cli, codegen, template, boilerplate, architecture]

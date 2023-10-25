@@ -1,5 +1,6 @@
 name: clean_flu_repository
 description: Generates domain repository classes for maintaining clean data access in your Flutter project.
+repository: https://github.com/itisnajim/clean_flu_cli
 
 # The following defines the brick repository url.
 # Uncomment and update the following line before publishing the brick.

@@ -1,5 +1,6 @@
 name: clean_flu_screen
 description: Creates presentation screens (pages) in a Clean Architecture Flutter project.
+repository: https://github.com/itisnajim/clean_flu_cli
 
 # The following defines the brick repository url.
 # Uncomment and update the following line before publishing the brick.

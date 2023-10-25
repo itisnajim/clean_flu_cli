@@ -49,8 +49,7 @@ void run(HookContext context) async {
       : type == UseCaseTypes.stream.name
           ? 'Stream<OUT_TYPE>'
           : 'OUT_TYPE';
-  print(
-      'type $type classToUse $classToUse internalOutputType $internalOutputType');
+  //print('type $type classToUse $classToUse internalOutputType $internalOutputType');
 
   context.vars = {
     ...context.vars,

@@ -13,8 +13,8 @@ class UsecaseCommand extends Command<int> {
       ..addOption(
         'group',
         abbr: 'g',
-        help:
-            "What group name should be used for the folder where you'll organize your use case file(s)?",
+        help: "What group name should be used for the folder where you'll "
+            'organize your use case file(s)?',
       )
       ..addOption(
         'name',
@@ -22,11 +22,12 @@ class UsecaseCommand extends Command<int> {
         mandatory: true,
         help: 'Name of the usecase to be created',
       )
-      ..addMultiOption(
+      ..addOption(
         'type',
         abbr: 't',
         allowed: ['async', 'stream', 'basic'],
-        defaultsTo: ['async'],
+        defaultsTo: 'async',
+        help: 'Type of use case (async, stream, basic).',
       );
   }
 
@@ -47,11 +48,7 @@ class UsecaseCommand extends Command<int> {
     final bundle = cleanFluUsecaseBundle;
     final generator = await MasonGenerator.fromBundle(bundle);
     var vars = bundle.vars.map((key, _) {
-      final val = argResults![key] is Iterable? &&
-              ((argResults![key] as Iterable?)?.isEmpty ?? true)
-          ? null
-          : argResults![key];
-      return MapEntry(key, val);
+      return MapEntry(key, argResults![key]);
     });
 
     _logger.info(

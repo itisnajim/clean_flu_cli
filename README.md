@@ -1,4 +1,4 @@
-## Clean_Flu_Cli
+# clean_flu
 
 **CleanFlu** CLI is a command-line tool designed to help you build clean and organized Flutter app structures quickly and efficiently. With Clean_Flu_CLI, you can streamline the development of your Flutter applications by generating key components, ensuring clean architecture, and improving code maintainability.
 
@@ -37,7 +37,7 @@ The `usecase` command generates domain use case classes, encapsulating business 
 
 
 ```bash
-clean_flu usecase --name product_fetch
+clean_flu usecase --name product_fetch --group product
 ```
 
 #### Screen

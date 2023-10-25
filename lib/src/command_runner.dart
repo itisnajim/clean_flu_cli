@@ -6,7 +6,7 @@ import 'package:cli_completion/cli_completion.dart';
 import 'package:mason_logger/mason_logger.dart';
 import 'package:pub_updater/pub_updater.dart';
 
-const executableName = 'clean_flu_cli';
+const executableName = 'clean_flu';
 const packageName = 'clean_flu_cli';
 const description = 'Build a clean and organized Flutter app structure.';
 
